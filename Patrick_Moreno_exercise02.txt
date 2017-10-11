@@ -1,0 +1,44 @@
+1. 
+cd desktop
+touch index.html
+nano index.html
+cat index.html
+2.
+cd desktop
+mkdir git
+cp index.html git
+cp index.html git/index1.html
+cp index.html git/index2.html
+cp index.html git/index3.html
+touch style.css js.js
+cp style.css git
+cp js.js git
+3.
+cd git
+git clone https://github.com/karizmo/Exercise02.git
+cd exercise02
+mkdir js img css
+4.
+cd ..
+cp index1.html index2.html index3.html exercise02
+rm *html
+mv style.css exercise02/css
+mv js.js exercise02/js
+cd exercise02
+git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	css/
+	index1.html
+	index2.html
+	index3.html
+	js/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
